@@ -25,7 +25,7 @@ const ForgetPassword = () => {
 
 
             const reponse= await supabase.auth.resetPasswordForEmail(form.email,{
-                redirectTo: process.env.REACT_APP_URL
+                redirectTo:`https://supabase-full-authentication.vercel.app/update-password`
             })
 
 
